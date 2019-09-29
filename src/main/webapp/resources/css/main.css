@@ -652,6 +652,12 @@ body {
     opacity: .5;
 }
 
+@media screen and (max-width: 1500px) {
+    .account, .admin {
+        min-height: 45em;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .wallet-cell,
     .main-cell {
