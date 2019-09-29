@@ -8,8 +8,6 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="icon" href="<c:url value="/resources/img/favicon.ico"/>" type="image/x-icon">
-    <link rel="shortcut icon" href="<c:url value="/resources/img/favicon.ico"/>" type="image/x-icon">
     <link rel="stylesheet" href="<c:url value="/resources/css/normalize.css"/>"/>
     <link rel="stylesheet" href="<c:url value="/resources/css/reset.css"/>"/>
     <link rel="stylesheet" href="<c:url value="/resources/css/fonts.css"/>"/>
