@@ -123,9 +123,7 @@
 
 <script type="text/javascript" src="<c:url value="/resources/js/Ajax.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/modules/Module.js"/>"></script>
-<script type="text/javascript" src="<c:url value="/resources/js/modules/TabsSwitcher.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/modules/Exchange.js"/>"></script>
-<script type="text/javascript" src="<c:url value="/resources/js/modules/CheckValidInput.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/main.js"/>"></script>
 </body>
 </html>

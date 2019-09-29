@@ -64,7 +64,12 @@
             <p class="admin__text">Update user</p>
         </div>
         <div class="row">
-            <form class="admin__form" action="<c:url value="/admin/user/update"/>" method="post">
+            <form class="admin__form" action="<c:url value="/admin/user/update"/>" method="post"
+                  onsubmit="return CheckValidInput.check(
+                                        '.admin__form',
+                                        '.admin__input',
+                                        '',
+                                        '.admin__text')">
                 <label><input class="admin__input" type="text" value="${user.name}" name="username"/></label>
                 <ul class="admin__list">
                     <c:forEach items="${roles}" var="role">
@@ -84,6 +89,7 @@
                 </ul>
                 <label><input type="hidden" value="${user.id}" name="userId"/></label>
                 <input class="admin__submit" type="submit" value="Update"/>
+                <p class="admin__text"></p>
             </form>
         </div>
         <div class="row">
@@ -127,7 +133,6 @@
 
 <script type="text/javascript" src="<c:url value="/resources/js/Ajax.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/modules/Module.js"/>"></script>
-<script type="text/javascript" src="<c:url value="/resources/js/modules/TabsSwitcher.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/modules/Exchange.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/modules/CheckValidInput.js"/>"></script>
 <script type="text/javascript" src="<c:url value="/resources/js/main.js"/>"></script>
