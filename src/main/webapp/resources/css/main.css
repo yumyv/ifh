@@ -35,7 +35,7 @@ body {
 .header .row:first-child {
     padding-top: 1em;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -650,4 +650,48 @@ body {
 
 .social-links__pic:hover {
     opacity: .5;
+}
+
+@media screen and (max-width: 800px) {
+    .wallet-cell,
+    .main-cell {
+        width: 100%;
+        display: block;
+    }
+
+    .main-cell {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .auth__container {
+        width: auto;
+    }
+
+    .nav__item {
+        margin-bottom: 1em;
+    }
+
+    .exchange__list {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .exchange__item {
+        margin: .2em 0;
+    }
+
+    .page-tab__container {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header,
+    .account,
+    .admin,
+    .footer {
+        min-width: 380px;
+    }
 }
