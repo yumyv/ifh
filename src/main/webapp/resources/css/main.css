@@ -222,13 +222,14 @@ body {
     color: #d50000;
 }
 
-.account {
+.account, .admin {
     padding: 1em 0;
     min-height: 35em;
     background: #F3F6FA;
 }
 
-.account__heading {
+.account__heading,
+.admin__heading {
     text-align: center;
     font-weight: 500;
     font-family: Raleway, Helvetica, Arial, sans-serif;
@@ -301,7 +302,8 @@ body {
     width: 100%;
 }
 
-.wallet-cell__th, .wallet-cell__td {
+.wallet-cell__th,
+.wallet-cell__td {
     padding: .5em;
     max-width: 4em;
     overflow: auto;
@@ -438,7 +440,8 @@ body {
     width: 100%;
 }
 
-.last-operations__th, .last-operations__td {
+.last-operations__th,
+.last-operations__td {
     padding: .5em;
     max-width: 4em;
     overflow: auto;
@@ -454,25 +457,38 @@ body {
     border-bottom: 1px solid white;
 }
 
-.wallets__text, .categories__text, .operations__text, .settings__text {
+.wallets__text,
+.categories__text,
+.operations__text,
+.settings__text,
+.admin__text {
     margin: 1em 0;
     font-weight: 600;
     text-align: center;
     color: #d7ccc8;
 }
 
-.wallets__label, .categories__label, .settings__label {
+.wallets__label,
+.categories__label,
+.settings__label {
     margin-bottom: 1em;
     display: block;
 }
 
-.wallets__input, .categories__input, .settings__input {
+.wallets__input,
+.categories__input,
+.settings__input,
+.admin__input {
     margin-bottom: 1em;
     width: 100%;
     border: 1px solid #5d4037;
 }
 
-.wallets__submit, .categories__submit, .operations__submit, .settings__submit {
+.wallets__submit,
+.categories__submit,
+.operations__submit,
+.settings__submit,
+.admin__submit {
     padding: .5em 1em;
     border: none;
     background: #5d4037;
@@ -481,27 +497,42 @@ body {
     display: block;
 }
 
-.wallets__submit:hover, .categories__submit:hover, .operations__submit:hover, .settings__submit:hover {
+.wallets__submit:hover,
+.categories__submit:hover,
+.operations__submit:hover,
+.settings__submit:hover,
+.admin__submit:hover {
     background: #8b6b61;
 }
 
-.wallets__select, .categories__select {
+.wallets__select,
+.categories__select {
     margin-bottom: 1em;
     width: 100%;
     border: 1px solid #5d4037;
 }
 
-.wallets__container, .categories__container, .operations__container {
+.wallets__container,
+.categories__container,
+.operations__container,
+.admin__container {
     margin-top: 1em;
     max-height: 40em;
     overflow: auto;
 }
 
-.wallets__table, .operations__table {
+.wallets__table,
+.operations__table,
+.admin__table {
     width: 100%;
 }
 
-.wallets__th, .wallets__td, .operations__th, .operations__td {
+.wallets__th,
+.wallets__td,
+.operations__th,
+.operations__td,
+.admin__th,
+.admin__td {
     padding: .5em;
     max-width: 12em;
     overflow: auto;
@@ -543,6 +574,26 @@ body {
     color: black;
     border-bottom: 1px solid white;
     background: #fff3e0;
+}
+
+.admin__wrapper {
+    padding: 1em;
+    background: #6a1b9a;
+    color: white;
+}
+
+.admin__td {
+    color: black;
+    border-bottom: 1px solid white;
+    background: #f3e5f5;
+}
+
+.admin__input--sm {
+    width: auto;
+}
+
+.admin__link {
+    text-decoration: none;
 }
 
 .footer {

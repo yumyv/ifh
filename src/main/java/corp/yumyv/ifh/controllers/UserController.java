@@ -85,6 +85,7 @@ public class UserController {
         Long userId = userRepository.findByName(principal.getName()).getId();
 
         model.addAttribute("userName", userName);
+        model.addAttribute("userRoles", userRepository.findByName(principal.getName()).getRoles());
         model.addAttribute("wallets", walletRepository.findByUserIdOrderByName(userId));
         model.addAttribute("categories", categoryRepository.findByUserIdOrderByName(userId));
         model.addAttribute("operations", operationRepository.findByUserIdOrderByIdDesc(userId));

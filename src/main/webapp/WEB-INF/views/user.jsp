@@ -35,6 +35,13 @@
                     <li class="nav__item">
                         <a class="nav__link" href="<c:url value="/user"/>">Account</a>
                     </li>
+                    <c:forEach items="${userRoles}" var="role">
+                        <c:if test="${role eq 'ADMIN'}">
+                            <li class="nav__item">
+                                <a class="nav__link" href="<c:url value="/admin"/>">Admin</a>
+                            </li>
+                        </c:if>
+                    </c:forEach>
                     <li class="nav__item">
                         <form class="nav__link nav__link--logout" action="<c:url value="/logout"/>" method="post">
                             <input class="nav__logout" type="submit" value="Sign Out"/>
